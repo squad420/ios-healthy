@@ -8,13 +8,23 @@
 
 import Foundation
 import RealmSwift
+import ObjectMapper
 
-class Drug: Object {
+class Drug: Object, Mappable {
     
     dynamic var drugID: String = ""
     dynamic var name: String = ""
     dynamic var info : String = ""
     let inSaleSynonyms = List<InSaleSynonym>()
+    
+    required convenience init?(_ map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        drugID <- map["objectId"]
+        name <- map["name"]
+    }
     
 // Specify properties to ignore (Realm won't persist these)
     

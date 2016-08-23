@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Hey now")
+        NetworkLayerConfiguration.setup()
+        performSignUp()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +23,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func performSignUp() {
+        
+        let loadDrugsOperation = LoadDrugsOperation()
+        loadDrugsOperation.success = { drugs in
+            print(drugs.debugDescription)
+        }
+        loadDrugsOperation.failure = { error in print(error.localizedDescription) }
+        
+        NetworkQueue.shared.addOperation(loadDrugsOperation)
+    }
 
 }
 

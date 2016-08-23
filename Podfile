@@ -8,6 +8,6 @@ target 'Healthy' do
   # Pods for Healthy
 
 pod 'RealmSwift'
-pod 'Alamofire'
+pod 'ObjectMapper'
 
 end

@@ -12,6 +12,17 @@
 		32561F181D3011EF005DAD5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32561F161D3011EF005DAD5D /* Main.storyboard */; };
 		32561F1A1D3011EF005DAD5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32561F191D3011EF005DAD5D /* Assets.xcassets */; };
 		32561F1D1D3011EF005DAD5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32561F1B1D3011EF005DAD5D /* LaunchScreen.storyboard */; };
+		325DAE9A1D6C47CD009A4475 /* BackendConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAE991D6C47CD009A4475 /* BackendConfiguration.swift */; };
+		325DAE9C1D6C59A2009A4475 /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAE9B1D6C59A2009A4475 /* BackendAPIRequest.swift */; };
+		325DAE9E1D6C59ED009A4475 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAE9D1D6C59ED009A4475 /* NetworkService.swift */; };
+		325DAEA21D6C5BCD009A4475 /* LoadDrugsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAEA11D6C5BCD009A4475 /* LoadDrugsRequest.swift */; };
+		325DAEA41D6C7401009A4475 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAEA31D6C7401009A4475 /* BackendService.swift */; };
+		325DAEA71D6C7457009A4475 /* ServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAEA61D6C7457009A4475 /* ServiceOperation.swift */; };
+		325DAEAA1D6C7462009A4475 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAEA81D6C7462009A4475 /* NetworkOperation.swift */; };
+		325DAEAB1D6C7462009A4475 /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAEA91D6C7462009A4475 /* NetworkQueue.swift */; };
+		325DAEAE1D6C74BA009A4475 /* LoadDrugsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DAEAD1D6C74BA009A4475 /* LoadDrugsOperation.swift */; };
+		329BC65B1D6C8B970075B837 /* NSError+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329BC65A1D6C8B970075B837 /* NSError+Failure.swift */; };
+		329BC65D1D6C95B90075B837 /* NetworkLayerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329BC65C1D6C95B90075B837 /* NetworkLayerConfiguration.swift */; };
 		32C9DE3E1D467E0400F4A95B /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C9DE3D1D467E0400F4A95B /* Drug.swift */; };
 		32C9DE401D46807800F4A95B /* InSaleSynonym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C9DE3F1D46807800F4A95B /* InSaleSynonym.swift */; };
 		68BD4F61EBD325C7A4484165 /* Pods_Healthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9306A1AC8874A76464AD590 /* Pods_Healthy.framework */; };
@@ -25,6 +36,17 @@
 		32561F191D3011EF005DAD5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32561F1C1D3011EF005DAD5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32561F1E1D3011EF005DAD5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325DAE991D6C47CD009A4475 /* BackendConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackendConfiguration.swift; path = NetworkLayer/BackendConfiguration.swift; sourceTree = "<group>"; };
+		325DAE9B1D6C59A2009A4475 /* BackendAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackendAPIRequest.swift; path = NetworkLayer/BackendAPIRequest.swift; sourceTree = "<group>"; };
+		325DAE9D1D6C59ED009A4475 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = NetworkLayer/NetworkService.swift; sourceTree = "<group>"; };
+		325DAEA11D6C5BCD009A4475 /* LoadDrugsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadDrugsRequest.swift; path = NetworkLayer/Requests/LoadDrugsRequest.swift; sourceTree = "<group>"; };
+		325DAEA31D6C7401009A4475 /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		325DAEA61D6C7457009A4475 /* ServiceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceOperation.swift; sourceTree = "<group>"; };
+		325DAEA81D6C7462009A4475 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		325DAEA91D6C7462009A4475 /* NetworkQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkQueue.swift; sourceTree = "<group>"; };
+		325DAEAD1D6C74BA009A4475 /* LoadDrugsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadDrugsOperation.swift; sourceTree = "<group>"; };
+		329BC65A1D6C8B970075B837 /* NSError+Failure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Failure.swift"; sourceTree = "<group>"; };
+		329BC65C1D6C95B90075B837 /* NetworkLayerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayerConfiguration.swift; sourceTree = "<group>"; };
 		32C9DE3D1D467E0400F4A95B /* Drug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drug.swift; path = Model/Drug.swift; sourceTree = "<group>"; };
 		32C9DE3F1D46807800F4A95B /* InSaleSynonym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InSaleSynonym.swift; path = Model/InSaleSynonym.swift; sourceTree = "<group>"; };
 		9EE23784C00C3154F9D65DDD /* Pods-Healthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healthy/Pods-Healthy.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +87,7 @@
 		32561F111D3011EF005DAD5D /* Healthy */ = {
 			isa = PBXGroup;
 			children = (
+				325DAE961D6C445A009A4475 /* Network Layer */,
 				32C9DE361D466E1000F4A95B /* Model */,
 				32561F241D301240005DAD5D /* Scenes */,
 				32561F121D3011EF005DAD5D /* AppDelegate.swift */,
@@ -90,6 +113,56 @@
 			children = (
 			);
 			name = ShowDrugs;
+			sourceTree = "<group>";
+		};
+		325DAE961D6C445A009A4475 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				329BC65C1D6C95B90075B837 /* NetworkLayerConfiguration.swift */,
+				329BC65A1D6C8B970075B837 /* NSError+Failure.swift */,
+				325DAEA51D6C7443009A4475 /* Backend */,
+				325DAE9F1D6C5B23009A4475 /* Core Network */,
+				325DAEA01D6C5B3A009A4475 /* Requests */,
+				325DAEAC1D6C747D009A4475 /* Operations */,
+			);
+			name = "Network Layer";
+			sourceTree = "<group>";
+		};
+		325DAE9F1D6C5B23009A4475 /* Core Network */ = {
+			isa = PBXGroup;
+			children = (
+				325DAEA81D6C7462009A4475 /* NetworkOperation.swift */,
+				325DAEA91D6C7462009A4475 /* NetworkQueue.swift */,
+				325DAE9D1D6C59ED009A4475 /* NetworkService.swift */,
+			);
+			name = "Core Network";
+			sourceTree = "<group>";
+		};
+		325DAEA01D6C5B3A009A4475 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				325DAEA11D6C5BCD009A4475 /* LoadDrugsRequest.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		325DAEA51D6C7443009A4475 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				325DAE991D6C47CD009A4475 /* BackendConfiguration.swift */,
+				325DAE9B1D6C59A2009A4475 /* BackendAPIRequest.swift */,
+				325DAEA31D6C7401009A4475 /* BackendService.swift */,
+				325DAEA61D6C7457009A4475 /* ServiceOperation.swift */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+		325DAEAC1D6C747D009A4475 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				325DAEAD1D6C74BA009A4475 /* LoadDrugsOperation.swift */,
+			);
+			name = Operations;
 			sourceTree = "<group>";
 		};
 		32C9DE361D466E1000F4A95B /* Model */ = {
@@ -241,10 +314,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329BC65B1D6C8B970075B837 /* NSError+Failure.swift in Sources */,
 				32561F151D3011EF005DAD5D /* ViewController.swift in Sources */,
+				325DAEA41D6C7401009A4475 /* BackendService.swift in Sources */,
+				325DAE9C1D6C59A2009A4475 /* BackendAPIRequest.swift in Sources */,
+				325DAEA71D6C7457009A4475 /* ServiceOperation.swift in Sources */,
 				32561F131D3011EF005DAD5D /* AppDelegate.swift in Sources */,
 				32C9DE3E1D467E0400F4A95B /* Drug.swift in Sources */,
+				325DAEAE1D6C74BA009A4475 /* LoadDrugsOperation.swift in Sources */,
 				32C9DE401D46807800F4A95B /* InSaleSynonym.swift in Sources */,
+				325DAE9A1D6C47CD009A4475 /* BackendConfiguration.swift in Sources */,
+				325DAEAB1D6C7462009A4475 /* NetworkQueue.swift in Sources */,
+				325DAE9E1D6C59ED009A4475 /* NetworkService.swift in Sources */,
+				325DAEA21D6C5BCD009A4475 /* LoadDrugsRequest.swift in Sources */,
+				325DAEAA1D6C7462009A4475 /* NetworkOperation.swift in Sources */,
+				329BC65D1D6C95B90075B837 /* NetworkLayerConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +447,7 @@
 				INFOPLIST_FILE = Healthy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.klassneckii.Healthy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klassneckii.Healthy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -379,7 +463,7 @@
 				INFOPLIST_FILE = Healthy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.klassneckii.Healthy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klassneckii.Healthy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
