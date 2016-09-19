@@ -1,6 +1,6 @@
 import Foundation
 
-public class ServiceOperation: NetworkOperation {
+open class ServiceOperation: NetworkOperation {
     
     let service: BackendService
     
@@ -9,7 +9,7 @@ public class ServiceOperation: NetworkOperation {
         super.init()
     }
     
-    public override func cancel() {
+    open override func cancel() {
         service.cancel()
         super.cancel()
     }

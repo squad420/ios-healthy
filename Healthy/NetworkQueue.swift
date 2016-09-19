@@ -1,14 +1,14 @@
 import Foundation
 
-public class NetworkQueue {
+open class NetworkQueue {
     
-    public static var shared: NetworkQueue!
+    open static var shared: NetworkQueue!
     
-    let queue = NSOperationQueue()
+    let queue = OperationQueue()
     
     public init() {}
     
-    public func addOperation(op: NSOperation) {
+    open func addOperation(_ op: Operation) {
         queue.addOperation(op)
     }
 }

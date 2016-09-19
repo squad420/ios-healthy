@@ -17,7 +17,7 @@ class Drug: Object, Mappable {
     dynamic var info : String = ""
     let inSaleSynonyms = List<InSaleSynonym>()
     
-    required convenience init?(_ map: Map) {
+    required convenience init?(map: Map) {
         self.init()
     }
     

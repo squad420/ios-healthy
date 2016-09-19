@@ -10,9 +10,9 @@ import Foundation
 
 public final class BackendConfiguration {
     
-    let baseURL: NSURL
+    let baseURL: URL
     
-    public init(baseURL: NSURL) {
+    public init(baseURL: URL) {
         self.baseURL = baseURL
     }
     

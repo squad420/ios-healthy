@@ -7,7 +7,11 @@ target 'Healthy' do
 
   # Pods for Healthy
 
-pod 'RealmSwift'
-pod 'ObjectMapper'
+pod 'Realm', git: 'https://github.com/realm/realm-cocoa.git', branch: 'master', submodules: true
+pod 'RealmSwift', git: 'https://github.com/realm/realm-cocoa.git', branch: 'master', submodules: true
+pod 'ObjectMapper', :git => 'https://github.com/Hearst-DD/ObjectMapper.git', :branch => 'master'
+
+pod 'Moya', :git => 'https://github.com/Moya/Moya.git', :branch => 'swift-3.0'
+pod 'Alamofire', '~> 4.0'
 
 end

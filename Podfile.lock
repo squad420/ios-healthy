@@ -1,20 +1,65 @@
 PODS:
-  - ObjectMapper (1.4.0)
+  - Alamofire (4.0.0)
+  - Moya (7.0.0):
+    - Moya/Core (= 7.0.0)
+  - Moya/Core (7.0.0):
+    - Alamofire (~> 4.0.0)
+    - Result
+  - ObjectMapper (2.0.0)
   - Realm (1.0.2):
     - Realm/Headers (= 1.0.2)
   - Realm/Headers (1.0.2)
   - RealmSwift (1.0.2):
     - Realm (= 1.0.2)
+  - Result (3.0.0)
 
 DEPENDENCIES:
-  - ObjectMapper
-  - RealmSwift
+  - Alamofire (~> 4.0)
+  - Moya (from `https://github.com/Moya/Moya.git`, branch `swift-3.0`)
+  - ObjectMapper (from `https://github.com/Hearst-DD/ObjectMapper.git`, branch `master`)
+  - Realm (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
+  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  Moya:
+    :branch: swift-3.0
+    :git: https://github.com/Moya/Moya.git
+  ObjectMapper:
+    :branch: master
+    :git: https://github.com/Hearst-DD/ObjectMapper.git
+  Realm:
+    :branch: master
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :branch: master
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  Moya:
+    :commit: 03c0e546ae4f24b4d75451aba5902e26145e4032
+    :git: https://github.com/Moya/Moya.git
+  ObjectMapper:
+    :commit: ddf2c721a9f6b63d4bfa97c1065c31d5fa8548d5
+    :git: https://github.com/Hearst-DD/ObjectMapper.git
+  Realm:
+    :commit: 103d4c86cc2aa0d3fd2a3b4156dbd65e410ff25e
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :commit: 103d4c86cc2aa0d3fd2a3b4156dbd65e410ff25e
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
 
 SPEC CHECKSUMS:
-  ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
-  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
-  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Moya: 1e206b80225af90e6e1ca9d9d393dc1770fec2a5
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  Realm: 2948cfa3a05b7acc446abc4c124d443df646c8de
+  RealmSwift: 4816c8608630a9a00bba6d726bb30b4bab6dd6bf
+  Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
 
-PODFILE CHECKSUM: 94313d9c6d8474c19db03ea2cc28cdf578ff74b3
+PODFILE CHECKSUM: 0bdca9b44f49cdd410ccc0ead1cfde20044c19cc
 
 COCOAPODS: 1.0.1

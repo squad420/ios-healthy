@@ -11,11 +11,11 @@ import ObjectMapper
 
 class LoadDrugsOperation: ServiceOperation {
     
-    private let request: LoadDrugsRequest
+    fileprivate let request: LoadDrugsRequest
     
-    var success: (Array<Drug> -> Void)?
+    var success: ((Array<Drug>) -> Void)?
 //    var success: (String -> Void)?
-    var failure: (NSError -> Void)?
+    var failure: ((NSError) -> Void)?
     
     override init() {
         request = LoadDrugsRequest()
@@ -40,13 +40,14 @@ class LoadDrugsOperation: ServiceOperation {
 ////        }
 //    }
     
-    private func handleSuccess(response: AnyObject?) {
-        let drugs: Array<Drug> = Mapper<Drug>().mapArray(response)!
+    fileprivate func handleSuccess(_ response: AnyObject?) {
+        let drugs: Array<Drug> = Mapper<Drug>().mapArray(JSONObject: response)!
+  //      let drugs: Array<Drug> = Mapper<Drug>().mapArray(response)!
         self.success?(drugs)
         self.finish()
     }
     
-    private func handleFailure(error: NSError) {
+    fileprivate func handleFailure(_ error: NSError) {
         self.failure?(error)
         self.finish()
     }
